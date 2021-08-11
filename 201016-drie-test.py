@@ -67,4 +67,4 @@ chipFrame = gdspy.Rectangle((0,0), (chipS, chipS), 0)
 topCell.add(chipFrame)
 
 # Save the library in a file called 'first.gds'.
-lib.write_gds('201019-drie-test.gds')
+lib.write_gds('201016-drie-test.gds')

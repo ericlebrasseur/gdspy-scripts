@@ -116,5 +116,5 @@ for i in range(0, marksN):
 # ------
 # Output the layout to a GDSII file (default to all created cells).
 # Set the units we used to micrometers and the precision to nanometers.
-gdspy.write_gds('190702_dwl66_AlignmentMarks.gds', 
+gdspy.write_gds('190702-dwl66-alignment-marks.gds', 
                 unit=1.0e-6, precision=1.0e-9)

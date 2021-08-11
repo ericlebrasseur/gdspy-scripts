@@ -129,4 +129,4 @@ top_cell.add(gdspy.CellArray('triangle', 4, 1, (2*(c+l2), 0), (0, -l1), x_reflec
 
 # Output the layout to a GDSII file (default to all created cells).
 # Set the units we used to micrometers and the precision to nanometers.
-gdspy.write_gds('gdspy_test180605_1646.gds', unit=1.0e-6, precision=1.0e-9)
+gdspy.write_gds('180424-pmatter.gds', unit=1.0e-6, precision=1.0e-9)

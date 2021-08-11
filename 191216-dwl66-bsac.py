@@ -1,6 +1,8 @@
 import importlib
 import gdspy
 
+# bsac = back side alignment calibration
+
 importlib.reload(gdspy)
 
 print('Using gdspy module version ' + gdspy.__version__)
@@ -101,6 +103,6 @@ for i in range(0, MarkN):
 # ------
 # Output the layout to a GDSII file (default to all created cells).
 # Set the units we used to micrometers and the precision to nanometers.
-gdspy.write_gds('191216_DWL66_BSAlignmentCalibration.gds', 
+gdspy.write_gds('191216-dwl66-bsac.gds', 
                 unit=1.0e-6, precision=1.0e-9)
 

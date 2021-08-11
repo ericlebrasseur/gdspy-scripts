@@ -33,4 +33,4 @@ chipFrame = gdspy.Rectangle((0,0), (chipW, chipW), 0)
 topCell.add(chipFrame)
 
 # Save the library in a file called 'first.gds'.
-lib.write_gds('test.gds')
+lib.write_gds('200820-watanabe.gds')

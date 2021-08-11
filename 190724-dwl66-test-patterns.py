@@ -95,4 +95,4 @@ cell_top.add(gdspy.CellArray(cell_top1, 1, 1, (0, 0), origin))
 
 # Output the layout to a GDSII file (default to all created cells).
 # Set the units we used to micrometers and the precision to nanometers.
-gdspy.write_gds('190729_dwl66_testPatterns_0p3-3um.gds', unit=1.0e-6, precision=1.0e-9)
+gdspy.write_gds('190724-dwl66-test-patterns.gds', unit=1.0e-6, precision=1.0e-9)

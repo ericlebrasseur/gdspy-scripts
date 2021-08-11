@@ -10,9 +10,9 @@ print('Using gdspy module version ' + gdspy.__version__)
 ############################
 lineL = 100  # line length in um
 lineN = 5  # number of lines in an array
-lineWList = [0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.3, 1.4, 2.0]  # list of line widths
-lineP = 10  # pitch between lines in a same array
-arrayP = 70  # pitch between arrays of lines
+lineWList = [1.6, 2.0, 2.4, 2.8, 3.0, 3.2, 3.6, 4.0, 5.0]  # list of line widths
+lineP = 15  # pitch between lines in a same array
+arrayP = 100  # pitch between arrays of lines
 yP = 2*lineL + 100   # pitch between lines of arrays of lines
 textS = 15  # text size in um
 cellW = arrayP*(len(lineWList)-1) + lineP*lineN  # cell width
@@ -96,4 +96,4 @@ cell_top.add(gdspy.CellReference(cell_top1, pos2, rotation=90))
 
 # Output the layout to a GDSII file (default to all created cells).
 # Set the units we used to micrometers and the precision to nanometers.
-gdspy.write_gds('dwl66+_05mm_testPatterns.gds', unit=1.0e-6, precision=1.0e-9)
+gdspy.write_gds('190517-dwl66-20mm-test-patterns.gds', unit=1.0e-6, precision=1.0e-9)
