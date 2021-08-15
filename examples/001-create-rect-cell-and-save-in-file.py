@@ -10,17 +10,17 @@ import gdspy
 lib = gdspy.GdsLibrary()
 
 # Geometry must be placed in cells.
-cell = lib.new_cell('top')
+top_cell = lib.new_cell('top')
 
 # Create the geometry (a single rectangle) and add it to the cell.
 rect = gdspy.Rectangle((0, 0), (2, 1))
-cell.add(rect)
+top_cell.add(rect)
 
 # Save the library in a file called 'first.gds'.
-lib.write_gds('001-create-rect-cell-and-save-in-file.gds')
+lib.write_gds('examples/001-create-rect-cell-and-save-in-file.gds')
 
 # Optionally, save an image of the cell as SVG.
-cell.write_svg('001-create-rect-cell-and-save-in-file.svg')
+top_cell.write_svg('examples/001-create-rect-cell-and-save-in-file.svg')
 
 # Display all cells using the internal viewer.
 gdspy.LayoutViewer()
